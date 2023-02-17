@@ -1,0 +1,15 @@
+package io.github.yesminmarie.cqrs.core.events;
+
+import io.github.yesminmarie.cqrs.core.messages.Message;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@SuperBuilder
+public abstract class BaseEvent extends Message {
+    private int version;
+}
